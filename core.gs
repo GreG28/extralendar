@@ -196,13 +196,13 @@ function createEvent(calendar, event) {
   var end = new Date(getDateFromIso(event.end));
   var desc = info.teacher;
   var loc = info.location;
-  var color = calendar.getColor(); // ---- calendar.getColor()
-
+  var color = calendar.getColor();
+  
   log(2,"full color list -> " + color);
 
   if(desc == "  DOE, J"){
     title = "DE : " + title;
-    color = 11;
+    color = "#c91b5e";
   }    
 
   if(args.log_update){
