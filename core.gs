@@ -196,9 +196,11 @@ function createEvent(calendar, event) {
   var end = new Date(getDateFromIso(event.end));
   var desc = info.teacher;
   var loc = info.location;
+  var color = calendar.getColor();
 
   if(desc == "  DOE, J"){
     title = "DE : " + title;
+    color = 11;
   }    
 
   if(args.log_update){
@@ -212,7 +214,8 @@ function createEvent(calendar, event) {
 
   var event = calendar.createEvent(title, start, end, {
     description : desc,
-    location : loc
+    location : loc,
+    colorId : color,
   });
 };
 
