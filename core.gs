@@ -196,7 +196,7 @@ function createEvent(calendar, event) {
   var end = new Date(getDateFromIso(event.end));
   var desc = info.teacher;
   var loc = info.location;
-  var color = calendar.getColor();
+  var color = 11; // ---- calendar.getColor()
 
   log("full color list -> " + color);
 
