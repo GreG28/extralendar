@@ -200,9 +200,9 @@ function createEvent(calendar, event) {
 
   if(desc == "  DOE, J"){
     title = "DE : " + title;
-    color = "#dc2127";
+    color = "#DC2127";
   }    
-  
+
   if(args.log_update){
     desc += "\n\nUpdated at :\n" + new Date();
   }
