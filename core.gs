@@ -198,7 +198,7 @@ function createEvent(calendar, event) {
   var loc = info.location;
   var color = calendar.getColor();
 
-  log("full color list -> " + calendar.Colors.get());
+  log("full color list -> " + color);
 
   if(desc == "  DOE, J"){
     title = "DE : " + title;
